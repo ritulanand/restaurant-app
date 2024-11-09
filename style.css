@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    /* display: flex; */
+    background-color: #000;
+    /* justify-content: space-between; */
+    margin: 2px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    color: white;
+}
+
+.my-section {
+    background-image: url('https://placehold.co/600x200?text=offer-image');
+    background-size: cover; /* Ensures the image covers the whole section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 20vh; /* Sets section height to full viewport height */
+    color: white; /* Makes text color white for better visibility */
+    /* position: relative; */
+    background-position: center;
+
+}
+
+.btn {
+    /* position: absolute; */
+    background-color: #000;
+    color: white;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   vertical-align: center;
+ 
+
+}
