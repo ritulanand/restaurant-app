@@ -34,6 +34,10 @@ li{
     color: white; /* Makes text color white for better visibility */
     /* position: relative; */
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: center;
 
 }
 
@@ -41,10 +45,6 @@ li{
     /* position: absolute; */
     background-color: #000;
     color: white;
-    display: flex;
-   align-items: center;
-   justify-content: center;
-   margin: 0 auto;
    vertical-align: center;
  
 
