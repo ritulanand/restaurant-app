@@ -5,47 +5,296 @@
 }
 
 header{
-    /* display: flex; */
     background-color: #000;
-    /* justify-content: space-between; */
-    margin: 2px;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 
 ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: auto;
 }
 li{
     color: white;
+    margin-left: 10px;
 }
 
-.my-section {
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+ul li a:hover{
+    color: red;
+}
+.logo img{
+    margin: 20px 0 20px;
+}
+
+.login{
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline;
+    cursor: pointer;
+}
+.offer-section {
     background-image: url('https://placehold.co/600x200?text=offer-image');
-    background-size: cover; /* Ensures the image covers the whole section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    height: 20vh; /* Sets section height to full viewport height */
-    color: white; /* Makes text color white for better visibility */
-    /* position: relative; */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 350px; 
+    color: white; 
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    vertical-align: center;
 
 }
 
-.btn {
-    /* position: absolute; */
+.checkbtn {
+    margin-bottom: 20px;
     background-color: #000;
     color: white;
-   vertical-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
  
 
+}
+
+
+/* menu section  */
+.menu-section{
+    background-color: rgb(237, 234, 234)
+}
+
+.our-menu{
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu-section .our-menu {
+    font-size: 2em; 
+}
+
+.menu-section .red-underline {
+    border: none; /* Remove default styling */
+    border-top: 3px solid red; /* Set a red line */
+    width: 10%; /* Adjust the width as desired */
+    margin: 0 auto 20px; /* Center the line and add spacing below */
+}
+
+/* Basic container styling */
+.card-container {
+    display: flex;
+    gap: 40px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    padding: 20px;
+}
+
+/* Card styling */
+.menu-card {
+    background-color: #f9f9f9; /* Light background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 350px; /* Card width */
+    text-align: center;
+}
+
+.menu-card img{
+    width: 100%;
+    border-top-right-radius : 8px;
+    border-top-left-radius : 8px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.view-all{
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.menu-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-title h1{
+    border-left: 4px solid red;
+    padding: 10px;
+}
+
+.container{
+    margin: 40px;
+    background-color: #CEC3C5;
+}
+
+
+.add-to-cart-btn{
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+.menu-card-content h3{
+    color: red;
+    margin-bottom: 20px;
+}
+
+.menu-card-content p{
+    margin-bottom: 20px;
+}
+
+.menu-card-content{
+    padding: 15px;
+    text-align: left;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Column Styles */
+.footer-column {
+    width: 30%;
+}
+
+.footer-logo {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a, .social-links a, .footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover, .social-links a:hover, .footer-bottom a:hover {
+    color: #ff6b6b; /* Change link color on hover */
+}
+
+/* Social Links */
+.social-links {
+    margin: 10px 0;
+}
+
+/* Subscription Form */
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscribe-input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc; 
+    width: 70%;
+}
+
+.subscribe-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #ff4b4b;
+}
+
+/* Horizontal line styling */
+.footer-hr {
+    border: 0;
+    border-top: 1px solid #666;
+    margin: 20px;
+}
+
+/* Footer bottom text */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.footer-bottom span {
+    margin: 0 5px;
+}
+
+
+.footer-links{
+    flex-direction: column;
+}
+
+
+.footer-links .quick-link{
+    font-size: 24px;
+    color: #e63946;
+}
+
+.footer-desc{
+    font-size: 24px;
+    color: #e63946;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    font-size: 16px;
+}
+
+.social-hr{
+    border: 0;
+    border-top: 2px solid #666;
+    margin: 10px 0px 10px 0px;
 }
