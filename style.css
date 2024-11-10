@@ -309,7 +309,98 @@ ul li a:hover{
     margin: 10px 0px 10px 0px;
 }
 
+
 /* mobile view   */
-@media (max-width : 768px) {
+
+@media (max-width: 768px) {
+    /* Adjust nav styling */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        /* display: none; */
+    }
     
+    .logo img {
+        margin: 10px 0;
+        width: 150px; /* Adjust logo size */
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%; /* Full width */
+        margin: 0;
+    }
+
+    li {
+        margin: 5px 0; /* Space between items */
+        text-align: left;
+        display: none;
+    }
+
+    a.login {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block; /* Ensure visibility */
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Adjust card container layout */
+    .card-container {
+        flex-direction: column;
+        gap: 20px; /* Reduced space between cards */
+        padding: 10px;
+    }
+
+    .menu-card {
+        width: 100%; /* Full width for better readability */
+    }
+
+    /* Offer section adjustment */
+    .offer-section {
+        height: 250px; /* Reduced height */
+        justify-content: center;
+        padding: 10px;
+        background-size: cover;
+    }
+
+    /* Footer adjustments */
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .footer-column {
+        width: 100%; /* Full width */
+        margin-bottom: 20px; /* Space between columns */
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscribe-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-button {
+        width: 100%; /* Full width button */
+    }
+
+    /* Footer link styling */
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
 }
