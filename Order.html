@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History Page</title>
+    <link rel="stylesheet" href="Orderstyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <nav>
+          <div class="logo">
+            <img
+              src="https://placehold.co/200x80?text=ShopLogo"
+              width="300px"
+              height="60px"
+              alt="logo"
+            />
+          </div>
+  
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ourmenu.html">Our Menu</a></li>
+            <li><a href="#offers">Our offers</a></li>
+            <li><a href="Aboutus.html">Know more</a></li>
+            <li><a href="Order.html">your order</a></li>
+            <li><a href="#cart">Cart (0) </a></li>
+          </ul>
+          <a href="login.html" class="login">Login/signup</a>
+        </nav>
+      </header>
+    <!-- Order Section-->
+ <section class="order-section">
+    <h1 class="order-title">Your Order</h1>
+    <!-- Table-->
+    <table class="order-table">
+    <thead class="order-table-head">
+        <tr>
+        <th class="order-table-head-cell">Order No.</th>
+        <th class="order-table-head-cell">Order details</th>
+        <th class="order-table-head-cell">Total Price</th>
+        <th class="order-table-head-cell">Status</th>
+        </tr>
+    </thead>
+    </table>
+     <!-- Order Cards-->
+    <div id="order-cards" class="order-cards-container">
+        <!-- Order cards will be dynamically added here-->
+    </div>
+    <script src="Order.js" ></script>
+</body>
+</html>
