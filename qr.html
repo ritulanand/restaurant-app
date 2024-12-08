@@ -14,6 +14,7 @@
         placeholder="Enter text to generate QR code"
       />
       <button onclick="generateQRcode()">Generate Qr code</button>
+      <button onclick="downloadQRCode()">Download qr code</button>
       <div id="qrcode"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
@@ -27,6 +28,22 @@
           new QRCode(document.getElementById("qrcode"), text);
         } else {
           alert("Please enter some text");
+        }
+      }
+
+      function downloadQRCode() {
+        var qrCodeElement = document.querySelector("#qrcode img");
+
+        if (qrCodeElement) {
+          var link = document.createElement("a");
+
+          link.href = qrCodeElement.src;
+
+          link.download = "qrcode.png";
+
+          link.click();
+        } else {
+          alert("Please generate a QR code first");
         }
       }
     </script>
